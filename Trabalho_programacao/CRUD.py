@@ -3,7 +3,6 @@ from inventario import criar_produto, dictionary
  
  
 def adicionar_produto():
-    """Solicita dados ao usuário e adiciona um novo produto ao inventário."""
     print("\n── Adicionar Produto ──")
     nome = input("Nome do produto: ").strip().upper()
     if not nome:
@@ -31,7 +30,6 @@ def adicionar_produto():
  
  
 def buscar_produto():
-    """Busca um produto pelo nome (parcial) ou ID exato."""
     print("\n── Buscar Produto ──")
     termo = input("Digite o nome ou ID do produto: ").strip()
     encontrados = []
@@ -54,7 +52,6 @@ def buscar_produto():
  
  
 def atualizar_produto():
-    """Atualiza o preço e/ou quantidade de um produto existente."""
     print("\n── Atualizar Produto ──")
     termo = input("Digite o nome ou ID do produto a ser atualizado: ").strip()
  
@@ -84,7 +81,6 @@ def atualizar_produto():
  
  
 def remover_produto():
-    """Remove um produto do inventário pelo nome exato ou ID."""
     print("\n── Remover Produto ──")
     termo = input("Digite o nome ou ID do produto a ser removido: ").strip()
     inventario = dictionary["inventario"]
